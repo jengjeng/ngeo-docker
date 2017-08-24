@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  ngeo:
+    image: ngeo
+    build: .
+    ports:
+      - 3000:3000
+    volumes: 
+      - ./dist:/usr/src/app/dist
+    network_mode: bridge
